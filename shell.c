@@ -14,9 +14,9 @@ int main (void){
 	char cwd[1024];
 
     while(1){
-		if (getcwd(cwd, sizeof(cwd)) != NULL){
-			printf("%s", cwd);
-		}
+	if (getcwd(cwd, sizeof(cwd)) != NULL){
+		printf("%s", cwd);
+	}
         printf("%s", prompt);
         input_buf = fgets(input_buf, 299, stdin);
         printf("%s\n", input_buf);
